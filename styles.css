@@ -1,0 +1,250 @@
+/*Smooth Scrolling*/
+html {
+  scroll-behavior: smooth;
+}
+
+/*Background and Fonts*/
+body {
+  /* If Background Image:
+  background-position: center;
+  background-attachment: fixed;
+  */
+  background-color: rgb(22, 23, 27);
+  font-family: Proxima-Soft;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+/*Default Font Size*/
+p {
+  font-size: 14px
+}
+
+/*Header*/
+header {
+  position:fixed;
+  width: 100%;
+  font-size: 20px;
+  background-color: #00000033;
+  backdrop-filter: blur(15px);
+  height: 50px;
+  box-shadow: 0px 5px 25px 5px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
+}
+
+header img {
+  position: absolute;
+  top: 7.5px;
+  left: 15px;
+  height: 35px;
+}
+
+header a {
+  text-decoration: none;
+  color: slateblue;
+}
+
+header a:hover {
+  color: cornflowerblue;
+}
+
+
+/*Profile Picture*/
+.pfp {
+  width: 125px;
+  border-radius: 50%;
+  border: 2px solid white;
+  float: left;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+/*Profile Box*/
+.profilebox {
+  background-color: #3C1EAE;
+  padding: 20px;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: left;
+  width: 325px;
+}
+
+/*Description Box*/
+.descbox {
+  background-color: #3C1EAE;
+  padding: 15px;
+  border-radius: 30px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/*Titles*/
+h3 {
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/*Categorys Container*/
+.category_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/*Category Buttons*/
+.category_button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  border: 3px solid #3C1EAE;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+  font-size-adjust: 2px;
+}
+
+/*Zoom Effect*/
+.zoom2 {
+  transition: transform .4s;
+  height: 50px;
+  width: 130px;
+}
+
+.zoom2:hover {
+  transform: scale(1.25); /*If hover, 125% Zoom*/
+}
+
+/*Button Container*/
+.button_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin-right: 25px;
+  margin-bottom: 100px;
+}
+
+/*Square Button*/
+.square_button {
+  position: relative;
+  width: 125%;
+  height: 125%;
+  border: 3px solid #3C1EAE;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+/*Button Background*/
+.square_button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/*Blurred Image*/
+.blurred_image {
+  max-width: 100%;
+  max-height: 100%;
+  position: relative;
+  filter: blur(3px);
+  object-fit: cover;
+}
+
+/*Text on top of Image*/
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Proxima-Soft;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/*Zoom Effect*/
+.zoom {
+  transition: transform .3s;
+  height: 100px;
+  width: 100px;
+}
+
+.zoom:hover {
+  transform: scale(1.25); /*If hover, 125% Zoom*/
+}
+
+
+/*Social Icons*/
+.socials {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transition: transform .4s;
+}
+
+.socials img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  height: auto;
+}
+
+.socials:hover {
+  transform: scale(1.25); /*If hover, 125% Zoom*/
+}
+
+.socials_container {
+  margin-right: 10%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+h4 {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 50px;
+  font-size: 10px;
+}
+
+
+/*Text Selection*/
+::selection {
+  background: cornflowerblue;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: Proxima-Soft;
+  src: url(Fonts/proxima-soft.ttf);
+}
