@@ -240,7 +240,8 @@ span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 45px;
+  row-gap: 15px;
   margin-bottom: 50px;
 }
 
