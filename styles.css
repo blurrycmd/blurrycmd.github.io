@@ -114,6 +114,7 @@ header a:hover {
 
 /*Titles*/
 h3 {
+  scroll-margin-top: 75px;
   text-decoration: underline;
   text-align: center;
   margin-bottom: 25px;
